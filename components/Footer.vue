@@ -43,7 +43,7 @@
               <span class="block uppercase text-gray-600 text-sm font-semibold mb-2">Other Resources</span>
               <ul class="list-unstyled">
                 <li>
-                  <a href="https://stemgeeks.net/" target="_blank" rel="noopener" class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm">stemgeeks.net</a>
+                  <a href="https://stemgeeks.net" target="_blank" rel="noopener" class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm">stemgeeks.net</a>
                 </li>
                 <li>
                   <a href="https://hive.io" target="_blank" rel="noopener" class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm">hive.io</a>
@@ -78,7 +78,7 @@
 import { mapGetters } from "vuex";
 
 export default {
-  data() {
+  data () {
     return {
       date: new Date().getFullYear(),
       blog: `https://peakd.com/@${this.mainAccount}`

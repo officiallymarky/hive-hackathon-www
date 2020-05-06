@@ -9,7 +9,7 @@ export const mutations = {
 
 export const getters = {
   mainAccount: (state) => {
-    return state.account
+    return state.mainAccount
   },
   prizePoolAccount: (state) => {
     return state.prizePoolAccount

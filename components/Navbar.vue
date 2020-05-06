@@ -57,7 +57,7 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       showMenu: false
     }
