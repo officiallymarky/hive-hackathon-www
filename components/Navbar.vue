@@ -3,7 +3,7 @@
     <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
       <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
         <nuxt-link to="/">
-          <img src="/images/logo.svg" class="brand-logo">
+          <img src="~/assets/images/logo.svg" class="brand-logo">
         </nuxt-link>
         <button @click="toggleNavbar()"
           class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none">

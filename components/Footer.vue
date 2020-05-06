@@ -20,7 +20,7 @@
             Hive is a Fast, Scalable, Powerful blockchain for Web 3.0
           </h5>
           <div class="mt-6">
-            <a href="https://hive.io" rel="noopener"><img src="/images/hive_logo.svg" class="h-8"></a>
+            <a href="https://hive.io" rel="noopener"><img src="~/assets/images/hive_logo.svg" class="h-8"></a>
           </div>
         </div>
         <div class="w-full lg:w-6/12 px-4">
