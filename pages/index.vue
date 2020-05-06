@@ -93,7 +93,7 @@
             <div class="px-6 pb-6">
               <img :src="`https://images.hive.blog/u/${sponsor.account}/avatar`" :alt="sponsor.account" class="shadow-lg rounded-full max-w-full mx-auto bg-white border-2 border-white" style="max-width: 120px;"/>
               <div class="pt-1 text-center">
-                <h5 class="text-xl font-bold text-white"><a :href="`https://peakd.com/@${sponsor.account}`" rel="noopener">@{{ sponsor.account }}</a></h5>
+                <h5 class="text-xl font-bold text-white"><a :href="`${hiveAppUrl}/@${sponsor.account}`" rel="noopener">@{{ sponsor.account }}</a></h5>
                 <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
                   {{ sponsor.amount }}
                 </p>
@@ -120,7 +120,8 @@ export default {
   computed: {
     ...mapGetters({
       "mainAccount": "config/mainAccount",
-      "sponsors": "competitions/sponsors"
+      "sponsors": "competitions/sponsors",
+      "hiveAppUrl": "config/hiveAppUrl"
     })
   },
   mounted () {

@@ -64,9 +64,9 @@
         <div class="w-full md:w-4/12 px-4 mx-auto text-center">
           <div class="text-sm text-gray-600 font-semibold py-1">
             Copyright © {{date}} by
-            <a href="https://peakd.com/@themarkymark" class="text-gray-600 hover:text-gray-900">@themarkymark</a>
+            <a :href="`${hiveAppUrl}/@themarkymark`" class="text-gray-600 hover:text-gray-900">@themarkymark</a>
             and
-            <a href="https://peakd.com/@themasgartharkymark" class="text-gray-600 hover:text-gray-900">@asgarth</a>.
+            <a :href="`${hiveAppUrl}/@themasgartharkymark`" class="text-gray-600 hover:text-gray-900">@asgarth</a>.
           </div>
         </div>
       </div>
@@ -75,18 +75,19 @@
 </template>
 
 <script>
-import { mapGetters } from "vuex";
+import { mapGetters } from "vuex"
 
 export default {
   data () {
     return {
       date: new Date().getFullYear(),
-      blog: `https://peakd.com/@${this.mainAccount}`
+      blog: `${this.hiveAppUrl}/@${this.mainAccount}`
     }
   },
   computed: {
     ...mapGetters({
-      'mainAccount': 'config/mainAccount'
+      'mainAccount': 'config/mainAccount',
+      "hiveAppUrl": "config/hiveAppUrl"
     })
   }
 }
