@@ -64,5 +64,11 @@ export default {
     */
     extend (config, ctx) {
     }
-  }
+  },
+  // only add `router.base = '/<repository-name>/'` if `DEPLOY_ENV` is `GH_PAGES`
+  routerBase: process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+    router: {
+      base: '/hive-hackathon-www/'
+    }
+  } : {}
 }
